@@ -1,0 +1,49 @@
+{
+  "name": "tutorial-cross-app-testing",
+  "version": "1.0.0",
+  "description": "Cross-application testing with Protractor and Serenity/JS",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf target",
+    "lint": "tslint --config tslint.json --project tsconfig.json --format stylish",
+    "pretest": "serenity update",
+    "pree2e": "npm run lint && npm run webdriver:update -- --standalone --versions.standalone=2.53.1 --versions.chrome=2.29",
+    "e2e": "protractor ./protractor.conf.js",
+    "e2e-single": "protractor ./protractor.conf.js --mochaOpts.grep",
+    "report": "serenity run",
+    "test": "failsafe e2e report",
+    "webdriver-manager": "webdriver-manager",
+    "webdriver:update": "npm run webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serenity-js/tutorial-cross-app-testing.git"
+  },
+  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/serenity-js/tutorial-cross-app-testing/issues"
+  },
+  "homepage": "https://github.com/serenity-js/tutorial-cross-app-testing#readme",
+  "devDependencies": {
+    "@types/chai": "3.5.0",
+    "@types/chai-as-promised": "0.0.30",
+    "@types/mocha": "2.2.40",
+    "@types/node": "7.0.12",
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "mocha": "3.2.0",
+    "npm-failsafe": "0.2.1",
+    "protractor": "5.1.1",
+    "rimraf": "2.6.1",
+    "serenity-cli": "0.2.4",
+    "serenity-js": "1.3.0",
+    "ts-node": "3.0.2",
+    "tslint": "5.1.0",
+    "tslint-microsoft-contrib": "4.0.1",
+    "typescript": "2.2.2"
+  },
+  "engines": {
+    "node": ">= 6.9.x"
+  }
+}

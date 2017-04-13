@@ -1,0 +1,10 @@
+# IntelliJ
+.idea
+*.iml
+
+# Node
+node_modules
+*.log
+
+# Build artifacts
+target
