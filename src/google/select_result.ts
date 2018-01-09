@@ -1,6 +1,4 @@
-import { Click, Is, Wait } from 'serenity-js/lib/serenity-protractor';
-import { step } from 'serenity-js/lib/serenity/recording';
-import { PerformsTasks, Task } from 'serenity-js/lib/serenity/screenplay';
+import { Click, Is, PerformsTasks, step, Task, Wait } from 'serenity-js/lib/screenplay-protractor';
 
 import { GoogleSearch } from './ui/google_search';
 

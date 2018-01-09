@@ -19,5 +19,5 @@ exports.config = {
         browserName: 'chrome'
     },
 
-    restartBrowserBetweenTests: true,
+    restartBrowserBetweenTests: false,
 };

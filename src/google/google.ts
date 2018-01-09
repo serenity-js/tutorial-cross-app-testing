@@ -1,7 +1,5 @@
 import { protractor } from 'protractor';
-import { Enter, Open, UseAngular } from 'serenity-js/lib/serenity-protractor';
-import { step } from 'serenity-js/lib/serenity/recording';
-import { PerformsTasks, Task } from 'serenity-js/lib/serenity/screenplay';
+import { Enter, Open, PerformsTasks, step, Task, UseAngular } from 'serenity-js/lib/screenplay-protractor';
 
 import { GoogleSearch } from './ui/google_search';
 

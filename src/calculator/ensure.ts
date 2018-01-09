@@ -1,8 +1,5 @@
-import { Text } from 'serenity-js/lib/serenity-protractor';
-import { step } from 'serenity-js/lib/serenity/recording';
-import { PerformsTasks, See, Task } from 'serenity-js/lib/serenity/screenplay';
-import { Assertion } from 'serenity-js/lib/serenity/screenplay/expectations';
-
+import { Assertion } from '@serenity-js/core/lib/screenplay/expectations';
+import { PerformsTasks, See, step, Task, Text } from 'serenity-js/lib/screenplay-protractor';
 import { Calculator } from './ui/calculator';
 
 export class Ensure implements Task {
