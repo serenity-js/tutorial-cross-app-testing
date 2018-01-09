@@ -1,5 +1,5 @@
 import { by } from 'protractor';
-import { Target } from 'serenity-js/lib/serenity-protractor';
+import { Target } from 'serenity-js/lib/screenplay-protractor';
 
 export class GoogleSearch {
     static Query  = Target.the('Query').located(by.name('q'));

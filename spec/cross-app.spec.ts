@@ -1,7 +1,6 @@
 import { protractor } from 'protractor';
-import { BrowseTheWeb } from 'serenity-js/lib/serenity-protractor';
-import { Actor } from 'serenity-js/lib/serenity/screenplay';
 
+import { Actor, BrowseTheWeb } from 'serenity-js/lib/screenplay-protractor';
 import { Ensure, Multiply } from '../src/calculator';
 import { Google, SelectResult } from '../src/google';
 
